@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titu {
+    font-family: sans-serif;
+    color: #380861;
+    margin-left: 7%;
+}
+
+.subtitu {
+    font-family: sans-serif;
+    color: #380861;
+    margin-left: 10%;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-image: url("https://interactive-examples.mdn.mozilla.net/media/examples/lizard.png");
+    background-color: #ae92c6;
+    color: #0e042f;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 20%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0e042f;
+    display: inline-block;
+    width: 500px;
+    height: auto;
+}
+
+
+input,
+select,
+textarea,
+button {
+    border-radius: 3px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+
+.campo label {
+    margin-bottom: 0.2em;
+    counter-reset: #59429d;
+    display: block;
+}
+
+
+
+fieldset.grupo .campo {
+
+    float: left;
+    margin-right: 1em;
+
+}
+
+
+.campo input[type="tex"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background-color: #e0e0f8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.butao {
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-items: end;
+    border: transparent;
+}
+
+.botao:hover {
+    background-color: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#check {
+    display: inline-block;
+}
+
+@media (max-width:714px) {
+    html {
+        font-size: 100%;
+    }
+
+    body {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    body {
+        background-color: #f0f8ff;
+        font-family: sans-serif;
+        font-size: 1em;
+        color: #59429d;
+        margin-left: 20%;
+        margin-top: 2%;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (max-width:400px) {
+    html {
+        font-size: 100%;
+        align-items: center;
+    }
+}
